@@ -40,8 +40,8 @@ function prepareEnv(){
 	    dropInEnv();
 	});
 	$('#sceneToggle').click(function(){
-	    $('#trick-main').fadeToggle("slow");
-	    $('#treat-main').fadeToggle("slow");
+	    $('#trick-main').stop().fadeToggle("slow");
+	    $('#treat-main').stop().fadeToggle("slow");
 
 	});
 	$("#sponsorHand").hover(function(){
