@@ -22,7 +22,7 @@ var BatTransport = {
 		var bird = $('.bird'+i);
 		bird.css("left","-100px")
 		bird.css("top",Math.floor(Math.random()*1000)+"px")
-		bird.sprite({fps: 14, no_of_frames: 7});
+		//bird.sprite({fps: 14, no_of_frames: 7});
 		this.birdPool.push(bird);
 		this.count++;
 	},

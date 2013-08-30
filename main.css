@@ -213,12 +213,44 @@ html,body{
 	position: absolute;
 	margin: 0px;
 	padding: 0px;
-	background-image: url("images/bats.png");
-	background-color: transparent;
 	width: 50px;
 	height: 35px;
-	
+	z-index:4;
+    background-image: url("images/bats.png");
+	background-color: transparent;
+    
+    -webkit-animation: fly .4s steps(7) infinite;
+       -moz-animation: fly .4s steps(7) infinite;
+        -ms-animation: fly .4s steps(7) infinite;
+         -o-animation: fly .4s steps(7) infinite;
+            animation: fly .4s steps(7) infinite;
 }
+
+@-webkit-keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -350px; }
+}
+
+@-moz-keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -350px; }
+}
+
+@-ms-keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -350px; }
+}
+
+@-o-keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -350px; }
+}
+
+@keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -350px; }
+}
+
 
 
 .container.desc{
