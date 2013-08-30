@@ -81,7 +81,7 @@ var BatTransport = {
 		var dy = y-parseInt(div.css("top"), 10);
 		div.animate({
 			left: x+"px",
-		}, 500+Math.floor(Math.random()*200), "swing");
+		}, 750+Math.floor(Math.random()*200), "swing");
 
 		$.each(birds ,function(index, value) { 
 			var l = parseInt(value.css("left"), 10);
@@ -90,12 +90,12 @@ var BatTransport = {
 			    left: (l+dx)+"px",
 			    top: (u+dy)+"px"
 
-			}, 500+Math.floor(Math.random()*200), "swing",
+			}, 750+Math.floor(Math.random()*200), "swing",
 			function(){
 				value.animate({
 			    left: -100+"px",
 			    top: Math.floor(Math.random()*600)+"px"
-				}, 500+Math.floor(Math.random()*200), "swing",
+				}, 750+Math.floor(Math.random()*200), "swing",
 				function(){
 					BatTransport.putBirdInPool(value);
 				});

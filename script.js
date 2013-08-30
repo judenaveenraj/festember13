@@ -30,6 +30,7 @@ function prepareEnv(){
 		$('#trick-main').fadeIn("slow");
 	    $("#sceneToggle").fadeIn("slow");
 	    $("#sponsorHand").fadeIn("slow");
+	    $("#street").fadeIn("slow");
 	    dropInEnv();
 	});
 	$('#treat-door').click(function(){
@@ -37,6 +38,7 @@ function prepareEnv(){
 		$('#treat-main').fadeIn("slow");
 		$("#sceneToggle").fadeIn("slow");
 	    $("#sponsorHand").fadeIn("slow");
+	    $("#street").fadeIn("slow");
 	    dropInEnv();
 	});
 	$('#sceneToggle').click(function(){
@@ -67,7 +69,7 @@ function dropInEnv(){
 	$(".building").each(function(indx, ele){
 		setTimeout(function(){
 			$(ele).animate({
-		   		 bottom: "15%"
+		   		 bottom: "28%"
 				},2000,"easeOutElastic");
 			},
 			Math.floor(Math.random()*500)); 
