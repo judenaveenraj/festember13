@@ -37,6 +37,9 @@ $('#treat-door').mouseover(function(){
                 {src:"roadandpavement.png", id:"image10"},
                 {src:"stars.png", id:"image11"},
                 {src:"stars_trick.png", id:"image12"},
+                {src:"sponsorstab.png", id:"image13"},
+                {src:"bg_building.png", id:"image14"},
+                {src:"toggle.png", id:"image15"},
             ];
 
             function init(){

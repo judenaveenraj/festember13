@@ -41,7 +41,29 @@ html,body{
 	width:100%;
 	height:35%;
 	bottom: 0%;
+	left:-100%;
 	z-index:2;
+}
+#festLogo{
+	position: absolute;
+	background: url('images/festember.png');
+	background-size:100% 100%;
+	width:30%;
+	height:22%;
+	top: 1%;
+	left: 1%;
+	z-index:3;
+}
+#bg_building{
+	position: absolute;
+	background: url('images/bg_building.png');
+	background-size:100% 100%;
+	width:100%;
+	height:57%;
+	bottom: 28%;
+	
+	z-index:1;
+}
 }
 .starsky{
 	position: absolute;
@@ -136,6 +158,7 @@ html,body{
 	width: 200px;
 	height: 7%;
 	left:-250px;
+	z-index: 4;
 }
 
 #events.batMenuSide{
@@ -188,22 +211,27 @@ html,body{
 
 #sceneToggle{
 	position: absolute;
-	top: 2%;
-	right: 4%;
+	background: url('images/toggle.png');
+	background-size:100% 100%;
+	top: 3%;
+	right: -20%;
+	width: 20%;
+	height: 10%;
 	color: white;
 	z-index:10;
+	cursor: pointer;
 }
 
 
-#sponsorHand{
+#sponsorTab{
 	position: absolute;
-	background: url('images/sponsorhand.png');
+	background: url('images/sponsorstab.png');
 	background-size:100% 100%;
 	position: absolute;
 	width: 10%;
-	height: 10%;
+	height: 5%;
 	left: 43%;
-	bottom:-2%;
+	bottom:-5%;
 	z-index:5;
 	
 }

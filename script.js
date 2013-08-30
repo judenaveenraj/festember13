@@ -29,24 +29,31 @@ function prepareEnv(){
 	    $('#backdrop').slideUp();
 		$('#trick-main').fadeIn("slow");
 	    $("#sceneToggle").fadeIn("slow");
-	    $("#sponsorHand").fadeIn("slow");
+	    $("#sponsorTab").fadeIn("slow");
 	    $("#street").fadeIn("slow");
+	    $("#loader").fadeOut("fast");
+	    $("#festLogo").fadeIn(1000);
+	    $("#bg_building").fadeIn("slow");
 	    dropInEnv();
 	});
 	$('#treat-door').click(function(){
 	    $('#backdrop').slideUp();
 		$('#treat-main').fadeIn("slow");
 		$("#sceneToggle").fadeIn("slow");
-	    $("#sponsorHand").fadeIn("slow");
+	    $("#sponsorTab").fadeIn("slow");
 	    $("#street").fadeIn("slow");
+	    $("#loader").fadeOut("fast");
+	    $("#festLogo").fadeIn(1000);
+	    $("#bg_building").fadeIn("slow");
 	    dropInEnv();
+
 	});
 	$('#sceneToggle').click(function(){
 	    $('#trick-main').stop().fadeToggle("slow");
 	    $('#treat-main').stop().fadeToggle("slow");
 
 	});
-	$("#sponsorHand").hover(function(){
+	$("#sponsorTab").hover(function(){
 		inSponsorsMenu = true;
 		$(".sponsors.container").animate({
 			top:"10%"
@@ -74,6 +81,19 @@ function dropInEnv(){
 			},
 			Math.floor(Math.random()*500)); 
 	});
+	$("#street").animate({
+		   		 left: "0%"
+				},1500,"easeOutQuad");
+	setTimeout(function(){
+		$("#sponsorTab").animate({
+		   		 bottom: "0%"
+				},500,"swing");
+	},2000);
+	setTimeout(function(){
+		$("#sceneToggle").animate({
+		   		 right: "2%"
+				},1000,"easeOutElastic");
+	},2500);
 }
 
 function startMenu(category){
