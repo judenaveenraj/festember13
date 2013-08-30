@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h1{
+color:white;
+}
+#backdrop{
+	background-color:#1f140e;
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+#loader{
+	position: absolute;
+	z-index:2;
+	width:20%;
+}
+#loader > h2{
+	color: white;
+}
+#trick-door{
+	background: url('images/trick.png');
+	background-size:100% 100%;
+	position: absolute;
+	width: 27%;
+	height: 51%;
+	left: 23%;
+	top: 29%;
+	z-index:2;
+	cursor:pointer;
+
+}
+#treat-door{
+	background: url('images/treat.png');
+	background-size:100% 100%;
+	position: absolute;
+	width: 18%;
+	height: 53%;
+	left: 57%;
+	top: 28%;
+	z-index:2;
+	cursor:pointer;
+}
+#trick-main{
+	background-color:#061f3e;
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+#treat-main{
+	background-color:#061f3e;
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+#trick{
+	background: url('images/trick-logo.png');
+	background-size:100% 100%;
+	position: absolute;
+	width:10%;
+	height:10%;
+	left:26%;
+	top:30%;
+	z-index:1;
+
+}
+#treat{
+	background: url('images/treat-logo.png');
+	background-size:100% 100%;
+	position: absolute;
+	width:10%;
+	height:10%;
+	left:60%;
+	top:30%;
+	z-index:1;
+}
+
+

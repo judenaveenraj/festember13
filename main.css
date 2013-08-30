@@ -1,0 +1,201 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h1{
+color:white;
+}
+
+html,body{
+	min-width: 100%;
+	min-height: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+
+.building.workshops.treat{
+	background: url('images/workshops.png');
+	background-size:100% 100%;
+}
+.building.workshops.trick{
+	background: url('images/workshops_trick.png');
+	background-size:100% 100%;
+}
+.building.events.treat{
+	background: url('images/events.png');
+	background-size:100% 100%;
+}
+.building.events.trick{
+	background: url('images/events_trick.png');
+	background-size:100% 100%;
+}
+.building.gallery.treat{
+	background: url('images/gallery.png');
+	background-size:100% 100%;
+}
+.building.gallery.trick{
+	background: url('images/gallery_trick.png');
+	background-size:100% 100%;
+}
+.building.fsr.treat{
+	background: url('images/fsr.png');
+	background-size:100% 100%;
+}
+.building.fsr.trick{
+	background: url('images/fsr_trick.png');
+	background-size:100% 100%;
+}
+
+.building.workshops{
+	position: absolute;
+	width: 18%;
+	height: 30%;
+	left: 18%;
+	bottom:15%;
+	z-index:2;
+	cursor:pointer;
+
+}
+.building.events{
+	position: absolute;
+	width: 28%;
+	height: 50%;
+	left: 33%;
+	bottom:15%;
+	z-index:2;
+	cursor:pointer;
+}
+.building.gallery{
+	position: absolute;
+	width: 22%;
+	height: 38%;
+	left: 54%;
+	bottom:15%;
+	z-index:2;
+	cursor:pointer;
+}
+.building.fsr{
+	position: absolute;
+	width: 30%;
+	height: 51%;
+	left: 70%;
+	bottom:15%;
+	z-index:2;
+	cursor:pointer;
+}
+
+
+.batMenuSide{
+	position: absolute;
+	background-color: #ff5656;
+	width: 200px;
+	height: 7%;
+	left:-250px;
+}
+
+#events.batMenuSide{
+	top:27%;
+}
+#workshops.batMenuSide{
+	top:35%;
+}
+#pronite.batMenuSide{
+	top:43%;
+}
+#informals.batMenuSide{
+	top:51%;
+}
+#gallery.batMenuSide{
+	top:59%;
+}
+#sponsors.batMenuSide{
+	top:67%;
+}
+
+.batMenuSide h2{
+	font-family: sans-serif;
+	text-align: right;
+	margin-top: 10px;
+	margin-right: 15px;
+}
+
+.bird{
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	background-image: url("images/bats.png");
+	background-color: transparent;
+	width: 50px;
+	height: 35px;
+	
+}
+
+
+.desc1{
+	position:absolute;
+	width:60%;
+	height:80%;
+	left:20%;
+	bottom:100%;
+	background-color: gray;
+	z-index:3;
+}
+.desc2{
+	position:absolute;
+	width:60%;
+	height:80%;
+	left:20%;
+	bottom:100%;
+	background-color: black;
+	z-index:3;
+		
+}
+
+#sceneToggle{
+	position: absolute;
+	top: 2%;
+	right: 4%;
+	color: white;
+}
+
+
+#sponsorHand{
+	position: absolute;
+	background: url('images/sponsorhand.png');
+	background-size:100% 100%;
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	left: 43%;
+	bottom:-2%;
+	z-index:5;
+	
+}
+
+.sponsors.container{
+	position: absolute;
+	top:100%;
+	left:10%;
+	width: 80%;
+	height: 90%;
+	background-color: rgba(0,0,0,0.8);
+	
+}
+
+#sponsorsFestLogo{
+	position: absolute;
+	background: url('images/festember.png');
+	background-size:100% 100%;
+	top:5%;
+	left:10%;
+	width: 20%;
+	height: 10%;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 10;
+
+}
