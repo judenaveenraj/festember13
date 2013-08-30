@@ -136,7 +136,7 @@ html,body{
 }
 
 
-.desc1{
+.container.desc{
 	position:absolute;
 	width:60%;
 	height:80%;
@@ -144,16 +144,6 @@ html,body{
 	bottom:100%;
 	background-color: gray;
 	z-index:3;
-}
-.desc2{
-	position:absolute;
-	width:60%;
-	height:80%;
-	left:20%;
-	bottom:100%;
-	background-color: black;
-	z-index:3;
-		
 }
 
 #sceneToggle{
@@ -184,18 +174,50 @@ html,body{
 	width: 80%;
 	height: 90%;
 	background-color: rgba(0,0,0,0.8);
+	z-index: 10;
+	overflow: scroll;
 	
 }
 
 #sponsorsFestLogo{
-	position: absolute;
+	position: relative;
 	background: url('images/festember.png');
 	background-size:100% 100%;
 	top:5%;
-	left:10%;
-	width: 20%;
-	height: 10%;
+	left:35%;
+	width: 30%;
+	height: 30%;
+	float: left;
 	background-color: rgba(0,0,0,0.8);
 	z-index: 10;
 
+}
+.sponsor_c{
+	color: white;
+	text-align: center;
+	float:left;
+}
+.sponsor_c img {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.sponsor_c.priority1{
+	width: 100%;
+}
+.sponsor_c.priority2{
+	width: 50%;
+}
+.sponsor_c.priority3{
+	width: 32%;
+}
+.sponsor_c.priority1 img{
+	width: 40%;
+}
+.sponsor_c.priority2 img{
+	width: 60%;
+}
+.sponsor_c.priority3 img{
+	width: 50%;
 }

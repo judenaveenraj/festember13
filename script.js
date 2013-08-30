@@ -46,27 +46,18 @@ function prepareEnv(){
 	});
 	$("#sponsorHand").hover(function(){
 		inSponsorsMenu = true;
-		$(".sponsors.container.trick").animate({
-			top:"10%"
-		},400,"swing");
-	});
-	$("#sponsorHand").hover(function(){
-		inSponsorsMenu = true;
-		console.log("in pull");
-		$(".sponsors.container.trick").stop().animate({
+		$(".sponsors.container").animate({
 			top:"10%"
 		},400,"swing");
 	});
 
 	$(".sponsors.container").hover(function(){},function(){
-		console.log("out");
-		if(inSponsorsMenu){
+		//if(inSponsorsMenu){
 			$(this).stop().animate({
 				top:"100%"
 			},400,"swing");
-			console.log("push");
-			inSponsorsMenu = false;
-		}
+		//	inSponsorsMenu = false;
+		//}
 	});
 	
 }
