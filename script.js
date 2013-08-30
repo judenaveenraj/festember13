@@ -34,6 +34,8 @@ function prepareEnv(){
 	    $("#loader").fadeOut("fast");
 	    $("#festLogo").fadeIn(1000);
 	    $("#bg_building").fadeIn("slow");
+	    $("#car").fadeIn("slow");
+	    $("#moonsky").fadeIn(1000);
 	    dropInEnv();
 	});
 	$('#treat-door').click(function(){
@@ -45,6 +47,8 @@ function prepareEnv(){
 	    $("#loader").fadeOut("fast");
 	    $("#festLogo").fadeIn(1000);
 	    $("#bg_building").fadeIn("slow");
+	    $("#car").fadeIn("slow");
+	    $("#moonsky").fadeIn(1000);
 	    dropInEnv();
 
 	});
@@ -94,6 +98,14 @@ function dropInEnv(){
 		   		 right: "2%"
 				},1000,"easeOutElastic");
 	},2500);
+	setTimeout(animateCar, 2000);
+		
+}
+
+function animateCar(){
+	$("#car").animate({
+		left:"-30%"
+	}, 10000, "linear", function(){ $(this).css("left","110%"); animateCar();});
 }
 
 function startMenu(category){

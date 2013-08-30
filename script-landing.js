@@ -40,6 +40,10 @@ $('#treat-door').mouseover(function(){
                 {src:"sponsorstab.png", id:"image13"},
                 {src:"bg_building.png", id:"image14"},
                 {src:"toggle.png", id:"image15"},
+                {src:"car.png", id:"image16"},
+                {src:"moon.png", id:"image17"},
+                {src:"fsr_trick_anim.png", id:"image18"},
+                
             ];
 
             function init(){
