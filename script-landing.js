@@ -53,6 +53,7 @@ $('#treat-door').mouseover(function(){
 
             preload.addEventListener("progress", handleProgress);
             preload.addEventListener("complete", handleComplete);
+            preload.setMaxConnections(10);
             preload.loadManifest(manifest);
 
             createjs.Ticker.setFPS(30);

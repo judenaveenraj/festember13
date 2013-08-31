@@ -36,6 +36,7 @@ function prepareEnv(){
 	    $("#bg_building").fadeIn("slow");
 	    $("#car").fadeIn("slow");
 	    $("#moonsky").fadeIn(1000);
+	    $("#sponsorContainer").show();
 	    dropInEnv();
 	});
 	$('#treat-door').click(function(){
@@ -49,6 +50,7 @@ function prepareEnv(){
 	    $("#bg_building").fadeIn("slow");
 	    $("#car").fadeIn("slow");
 	    $("#moonsky").fadeIn(1000);
+	    $("#sponsorContainer").show();
 	    dropInEnv();
 
 	});
@@ -99,6 +101,11 @@ function dropInEnv(){
 				},1000,"easeOutElastic");
 	},2500);
 	setTimeout(animateCar, 2000);
+
+	//Delayed loading of sponsor logos
+	$('.sponsor_c img').each(function(){
+	  $(this).attr('src', $(this).attr('delayedsrc'));
+	});
 		
 }
 
